@@ -5,7 +5,7 @@ Vexus Cinema
 HTML5, CSS3, JavaScript
 </p>
 
-<img src="https://github.com/catalyn98/VexusCinema-application/blob/master/StackTech.png" />
+<img src="https://github.com/catalyn98/VexusCinema-application/StackTech.png" />
 
 # Tech stack
 Vexus Cinema uses a number of open source projects to work properly:
@@ -24,19 +24,19 @@ $ git clone https://github.com/catalyn98/VexusCinema-application.git
 # Web application screenshots 
 
 1.Cinema
-<img src="https://github.com/catalyn98/StreamIT-application/blob/master/Screenshots/1.Cinema.png" />
+<img src="https://github.com/catalyn98/StreamIT-application/tree/main/Screenshots/1.Cinema.png" />
 
 <details>
   <summary>More Screenshots</summary>
   2.Filme noi
-  <img src="https://github.com/catalyn98/StreamIT-application/blob/master/Screenshots/2.Filme%20noi.png" />
+  <img src="https://github.com/catalyn98/StreamIT-application/tree/main/Screenshots/2.Filme%20noi.png" />
 
   3.Genuri
-  <img src="https://github.com/catalyn98/StreamIT-application/blob/master/Screenshots/3.Genuri.png" />
+  <img src="https://github.com/catalyn98/StreamIT-application/tree/main/Screenshots/3.Genuri.png" />
 
   4.Bilete
-  <img src="https://github.com/catalyn98/StreamIT-application/blob/master/Screenshots/Bilete.png" />
+  <img src="https://github.com/catalyn98/StreamIT-application/tree/main/Screenshots/4.Bilete.png" />
 
   5.Contact
-  <img src="https://github.com/catalyn98/StreamIT-application/blob/master/Screenshots/Contact.png" />
+  <img src="https://github.com/catalyn98/StreamIT-application/tree/main/Screenshots/5.Contact.png" />
 </details>
