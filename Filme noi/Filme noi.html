@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Filme noi</title>
+	
+	<link rel="stylesheet" type="text/css" href="CSS Filme noi.css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<script type="text/javascript" src="JavaScript/Hamburger.js"></script>
+	<script type="text/javascript" src="JavaScript/Carousel.js"></script>
+	<script type="text/javascript" src="JavaScript/Carousel - distributie.js"></script>
+</head>
+<body>
+
+	<header>
+	
+		<a href="../Cinema/Cinema.html"><img src="Imagini Filme noi/Imagini Logo/Vexus.png"  class="logo" alt="logo"></a>
+		<nav>
+			<a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()"><i class="fa fa-bars"></i></a>
+			<ul class="nav" id="primary-menu">
+				    <li><a href="../Cinema/Cinema.html">Cinema</a></li>
+                    <li class="current-page"><a href="Filme noi.html">Filme noi</a></li>
+                    <li><a href="../Genuri/Genuri.html">Genuri</a></li>
+                    <li><a href="../Bilete/Bilete.html">Bilete</a></li>
+                    <li><a href="../Contact/Contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="wrapper">
+		<section>
+			<img class="Poster" src="Imagini Filme noi/Imagini Galerie/Poster film1.jpg">
+			<div class="text-slideshow">
+				<div class="mySlides1">
+					<h2>Jocurile Foamei Revolta - partea 1</h2>
+					<p><span>Gen: </span>acțiune | aventuri | SF | thriller</p>
+					<p><span>Regizor: </span>Francis Lawrence</p>
+					<p><span>Scenariu: </span>Suzanne Colins, Donald Sutherland, Peter Craig</p>
+					<p><span>Producător: </span>Lionsgate Films</p>
+					<p><span>Serie de filme: </span>Jocurile foamei</p>
+					<p><span>Sinopsis: </span>
+					   Katniss (Jenifer Lawrence) se recuperează după extenuantele Jocuri ale Foamei, întrebându-se încontinuu dacă a avut vreun rost surprinzătorul 
+					   complot împotriva Capitoliului ce a salvat-o de la o moarte sigură. Fără țel, eroina privește cum cei din jur se pregătesc pentru ofensiva ce 
+					   ar putea distruge o dată pentru totdeauna tirania din Panem și se lasă fără mult entuziasm prinsă în luptă, devenind simobolul Rezistenței. 
+					   Curând, ea se va trezi prinsă într-un pericol mortal, alături de cele mai dragi persoane din viața ei.</p>
+					   <p><span>Premiera: </span>20.01.2020</p>
+				</div>
+				<div class="mySlides1">
+					<h2>Distribuție</h2>
+					<p>
+						<div class="row">
+						<div class="column">
+						  <img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+						  <img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+						  <img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+						  <img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+						  </div>
+						<div class="column">
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+						  </div>
+					  </div>
+					  
+					  <div id="myModal" class="modal">
+						<span class="close cursor" onclick="closeModal()">&times;</span>
+						<div class="modal-content">
+					  
+						  <div class="mySlides">
+							<div class="numbertext">1 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine1.jpg" style="width:500px">
+						  </div>
+					  
+						  <div class="mySlides">
+							<div class="numbertext">2 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine2.jpg" style="width:500px">
+						  </div>
+					  
+						  <div class="mySlides">
+							<div class="numbertext">3 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine3.jpg" style="width:500px">
+						  </div>
+						  
+						  <div class="mySlides">
+							<div class="numbertext">4 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine4.jpg" style="width:500px">
+						  </div>
+
+						  <div class="mySlides">
+							<div class="numbertext">5 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine5.jpg" style="width:500px">
+						  </div>
+
+						  <div class="mySlides">
+							<div class="numbertext">6 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine6.jpg" style="width:500px">
+						  </div>
+						  
+						  <a class="Prev" onclick="plusSlides(-1)">&#10094;</a>
+						  <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+					  
+						  <div class="caption-container">
+							<p id="caption"></p>
+						  </div>
+					
+					  
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Jennifer Lawrence">
+						  </div>
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Josh Hutcherson">
+						  </div>
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Liam Hemsworth">
+						  </div>
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Julianne Moore">
+						  </div>
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Sam Claflin">
+						  </div>
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Willow Shields">
+						  </div>
+						</div>
+					  </div>
+					</p>
+				</div>
+				<!-- Next/prev buttons -->
+				<a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides1(1)">&#10095;</a>
+			</div>
+		</section>
+
+		<section>
+			<img class="Poster" src="Imagini Filme noi/Imagini Galerie/Poster film2.jpg">
+			<div class="text-slideshow">
+				<div class="mySlides2">
+					<h2>Allegiant</h2>
+					<p><span>Gen: </span>aventuri | SF</p>
+					<p><span>Regizor: </span>Robert Schwentke</p>
+					<p><span>Scenariu: </span>Veronica Roth, Stephen Chbosky, Adam Cooper</p>
+					<p><span>Producător: </span>Summit Entertainment, Red Wagon Entertainment, Mandeville Films</p>
+					<p><span>Serie de filme: </span>Divergent</p>
+					<p><span>Sinopsis: </span>
+					   După cutremurătoarea revelație din Insurgent, Tris (Shailene Woodley) și Four (Theo James) sunt obligați să evadeze dincolo de zidurile care înconjoară orașul Chicago. 
+					   Pe lângă pericolele necunoscute care îi așteaptă, asta mai înseamnă și să-și abandoneze pentru prima dată prietenii și familia. 
+					   Tot ce știau devine irelevant în această nouă lume, iar cei doi trebuie să aleagă în cine să aibă încredere în momentul în care izbucnește un război 
+					   care amenință întreaga omenire. Pentru a supraviețui, Tris va lua decizii aproape imposibile care îi vor testa curajul, puterea de sacrificiu și iubirea.</p>
+					   <p><span>Premiera: </span>21.01.2020</p>
+				</div>
+				<div class="mySlides2">
+					<h2>Distribuție</h2>
+					<p>
+						<div class="row">
+						<div class="column">
+						  <img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+						  <img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine8.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+						  <img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine9.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+						  <img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine10.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine11.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+						  </div>
+						<div class="column">
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine12.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+						  </div>
+					  </div>
+					  
+					  <div id="myModal" class="modal">
+						<span class="close cursor" onclick="closeModal()">&times;</span>
+						<div class="modal-content">
+					  
+						  <div class="mySlides">
+							<div class="numbertext">1 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine7.jpg" style="width:500px">
+						  </div>
+					  
+						  <div class="mySlides">
+							<div class="numbertext">2 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine8.jpg" style="width:500px">
+						  </div>
+					  
+						  <div class="mySlides">
+							<div class="numbertext">3 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine9.jpg" style="width:500px">
+						  </div>
+						  
+						  <div class="mySlides">
+							<div class="numbertext">4 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine10.jpg" style="width:500px">
+						  </div>
+
+						  <div class="mySlides">
+							<div class="numbertext">5 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine11.jpg" style="width:500px">
+						  </div>
+
+						  <div class="mySlides">
+							<div class="numbertext">6 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine12.jpg" style="width:500px">
+						  </div>
+						  
+						  <a class="Prev" onclick="plusSlides(-1)">&#10094;</a>
+						  <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+					  
+						  <div class="caption-container">
+							<p id="caption"></p>
+						  </div>
+					
+					  
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Shailene Woodley">
+						  </div>
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine8.jpg" style="width:100%" onclick="currentSlide(8)" alt="Theo James">
+						  </div>
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine9.jpg" style="width:100%" onclick="currentSlide(9)" alt="Naomi Watts">
+						  </div>
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine10.jpg" style="width:100%" onclick="currentSlide(10)" alt="Miles Teller">
+						  </div>
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine11.jpg" style="width:100%" onclick="currentSlide(11)" alt="Maggie Q">
+						  </div>
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine12.jpg" style="width:100%" onclick="currentSlide(12)" alt="Zoë Kravitz">
+						  </div>
+						</div>
+					  </div>
+					</p>
+				</div>
+				<!-- Next/prev buttons -->
+				<a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides2(1)">&#10095;</a>
+			</div>
+		</section>
+	
+		<section>
+			<img class="Poster" src="Imagini Filme noi/Imagini Galerie/Poster film3.jpg">
+			<div class="text-slideshow">
+				<div class="mySlides3">
+					<h2>Troia</h2>
+					<p><span>Gen: </span>acțiune | dramă | război</p>
+					<p><span>Regizor: </span>Wolfgang Petersen</p>
+					<p><span>Scenariu: </span>Eric Bana, David Benioff</p>
+					<p><span>Producător: </span>Warner Bros. Pictures</p>
+					<p><span>Sinopsis: </span>
+					    De-a lungul timpului, oamenii au purtat războaie. Unele pentru putere, unele pentru glorie, unele pentru onoare - și altele pentru iubire.
+						În Grecia antică, pasiunea unuia dintre cele mai celebre cupluri ale literaturii, Paris, Prințul Troiei (Orlando Bloom) și Elena (Diane Kruger), Regina Spartei, 
+						generează un război care va devasta o civilizație. Când Paris o răpește pe Elena, soțul ei, regele Menelaus (Brendan Glesson), insultat și cu onoarea distrusă, 
+						pornește în recuperarea soției și în pedepsirea dușmanului.
+						Agamemnon (Brian Cox), puternicul rege din Micene, unește imediat toate armatele vaste ale Greciei pentru a o aduce pe Elena înapoi din Troia, 
+						pentru a apăra onoarea fratelui său.</p>
+					   <p><span>Premiera: </span>23.01.2020</p>
+				</div>
+				<div class="mySlides3">
+					<h2>Distribuție</h2>
+					<p>
+						<div class="row">
+						<div class="column">
+						  <img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine13.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+						  <img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine14.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+						  <img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine15.jpg" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+						  <img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine16.jpg" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine17.jpg" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
+						  </div>
+						<div class="column">
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine18.jpg" style="width:100%" onclick="openModal();currentSlide(18)" class="hover-shadow cursor">
+						  </div>
+					  </div>
+					  
+					  <div id="myModal" class="modal">
+						<span class="close cursor" onclick="closeModal()">&times;</span>
+						<div class="modal-content">
+					  
+						  <div class="mySlides">
+							<div class="numbertext">1 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine13.jpg" style="width:500px">
+						  </div>
+					  
+						  <div class="mySlides">
+							<div class="numbertext">2 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine14.jpg" style="width:500px">
+						  </div>
+					  
+						  <div class="mySlides">
+							<div class="numbertext">3 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine15.jpg" style="width:500px">
+						  </div>
+						  
+						  <div class="mySlides">
+							<div class="numbertext">4 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine16.jpg" style="width:500px">
+						  </div>
+
+						  <div class="mySlides">
+							<div class="numbertext">5 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine17.jpg" style="width:500px">
+						  </div>
+
+						  <div class="mySlides">
+							<div class="numbertext">6 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine18.jpg" style="width:500px">
+						  </div>
+						  
+						  <a class="Prev" onclick="plusSlides(-1)">&#10094;</a>
+						  <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+					  
+						  <div class="caption-container">
+							<p id="caption"></p>
+						  </div>
+					
+					  
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine13.jpg" style="width:100%" onclick="currentSlide(13)" alt="Brad Pitt">
+						  </div>
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine14.jpg" style="width:100%" onclick="currentSlide(14)" alt="Orlando Bloom">
+						  </div>
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine15.jpg" style="width:100%" onclick="currentSlide(15)" alt="Diane Kruger">
+						  </div>
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine16.jpg" style="width:100%" onclick="currentSlide(16)" alt="Brian Cox">
+						  </div>
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine17.jpg" style="width:100%" onclick="currentSlide(17)" alt="Eric Bana">
+						  </div>
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine18.jpg" style="width:100%" onclick="currentSlide(18)" alt="Rose Byrne">
+						  </div>
+						</div>
+					  </div>
+					</p>
+				</div>
+				<!-- Next/prev buttons -->
+				<a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides3(1)">&#10095;</a>
+			</div>
+		</section>
+
+		<section>
+			<img class="Poster" src="Imagini Filme noi/Imagini Galerie/Poster film4.jpg">
+			<div class="text-slideshow">
+				<div class="mySlides4">
+					<h2>G.I. Joe: Ascensiunea Cobrei</h2>
+					<p><span>Gen: </span>acțiune | aventuri | SF | thriller</p>
+					<p><span>Regizor: </span>Stephen Sommers</p>
+					<p><span>Scenariu: </span>Stuart Beattie, David Elliot</p>
+					<p><span>Producător: </span>Lorenzo di Bonaventura</p>
+					<p><span>Serie de filme: </span>G.I. Joe</p>
+					<p><span>Sinopsis: </span>
+					    G.I.J.O.E. este acronimul unei baze militare situate în Europa, Global Integrated Joint Operating Entity. 
+						Misiunea bazei, ai cărei soldați au trecut cele mai dificile teste fizice și intelectuale pentru a face parte din această echipă de elită, 
+						este să rezolve misiuni secrete peste tot pe glob. În filmul lui Sommers, soldații își folosesc echipamentele de ultimă generație 
+						pentru a contracara periculoasele activități ale unui traficant de arme.</p>
+					   <p><span>Premiera: </span>24.01.2020</p>
+				</div>
+				<div class="mySlides4">
+					<h2>Distribuție</h2>
+					<p>
+						<div class="row">
+						<div class="column">
+						  <img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine19.jpg" style="width:100%" onclick="openModal();currentSlide(19)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+						  <img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine20.jpg" style="width:100%" onclick="openModal();currentSlide(20)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+						  <img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine21.jpg" style="width:100%" onclick="openModal();currentSlide(21)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+						  <img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine22.jpg" style="width:100%" onclick="openModal();currentSlide(22)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine23.jpg" style="width:100%" onclick="openModal();currentSlide(23)" class="hover-shadow cursor">
+						  </div>
+						<div class="column">
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine24.jpg" style="width:100%" onclick="openModal();currentSlide(24)" class="hover-shadow cursor">
+						  </div>
+					  </div>
+					  
+					  <div id="myModal" class="modal">
+						<span class="close cursor" onclick="closeModal()">&times;</span>
+						<div class="modal-content">
+					  
+						  <div class="mySlides">
+							<div class="numbertext">1 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine19.jpg" style="width:500px">
+						  </div>
+					  
+						  <div class="mySlides">
+							<div class="numbertext">2 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine20.jpg" style="width:500px">
+						  </div>
+					  
+						  <div class="mySlides">
+							<div class="numbertext">3 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine21.jpg" style="width:500px">
+						  </div>
+						  
+						  <div class="mySlides">
+							<div class="numbertext">4 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine22.jpg" style="width:500px">
+						  </div>
+
+						  <div class="mySlides">
+							<div class="numbertext">5 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine23.jpg" style="width:500px">
+						  </div>
+
+						  <div class="mySlides">
+							<div class="numbertext">6 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine24.jpg" style="width:500px">
+						  </div>
+						  
+						  <a class="Prev" onclick="plusSlides(-1)">&#10094;</a>
+						  <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+					  
+						  <div class="caption-container">
+							<p id="caption"></p>
+						  </div>
+					
+					  
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine19.jpg" style="width:100%" onclick="currentSlide(19)" alt="Channing Tatum">
+						  </div>
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine20.jpg" style="width:100%" onclick="currentSlide(20)" alt="Rachel Nichols">
+						  </div>
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine21.jpg" style="width:100%" onclick="currentSlide(21)" alt="Dennis Quaid">
+						  </div>
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine22.jpg" style="width:100%" onclick="currentSlide(22)" alt="Sienna Miller">
+						  </div>
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine23.jpg" style="width:100%" onclick="currentSlide(23)" alt="Byung-hun Lee">
+						  </div>
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine24.jpg" style="width:100%" onclick="currentSlide(24)" alt="Joseph Gordon-Levitt">
+						  </div>
+						</div>
+					  </div>
+					</p>
+				</div>
+				<!-- Next/prev buttons -->
+				<a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides4(1)">&#10095;</a>
+			</div>
+		</section>
+
+		<section>
+			<img class="Poster" src="Imagini Filme noi/Imagini Galerie/Poster film5.jpg">
+			<div class="text-slideshow">
+				<div class="mySlides5">
+					<h2>Mumia</h2>
+					<p><span>Gen: </span>acțiune | aventuri | fantastic</p>
+					<p><span>Regizor: </span>Alex Kurtzman</p>
+					<p><span>Scenariu: </span>Christopher McQuarrie, Jon Spaihts, Dylan Kussman</p>
+					<p><span>Producător: </span>Dark Universe, Perfect World Pictures, K/O Paper Products</p>
+					<p><span>Sinopsis:</span>
+					    Deși îngropată într-o criptă din adâncul deșertului, o prințesă antică (Sofia Boutella din Kingsman: The Secret Service și Star Trek Beyond), 
+						al cărei destin i-a fost furat pe nedrept, este trezită la viață în zilele noastre, aducând cu ea răul suprem acumulat timp de milenii cât a stat 
+						prizonieră sub pământ, amenințând omenirea cu terori nemaivăzute și dincolo de puterea de înțelegere a oamenilor. Mumia ne poartă din nisipurile 
+						nesfârșite ale Orientului Mijlociu până în Londra zilei de azi dintr-o perspectivă absolut nouă, cu un amestec de senzații tari și magie ce 
+						ne va transporta într-o lume inedită stăpânită de zei și de monștri.</p>
+					   <p><span>Premiera: </span>25.01.2020</p>
+				</div>
+				<div class="mySlides5">
+					<h2>Distribuție</h2>
+					<p>
+						<div class="row">
+						<div class="column">
+						  <img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine25.jpg" style="width:100%" onclick="openModal();currentSlide(25)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+						  <img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine26.jpg" style="width:100%" onclick="openModal();currentSlide(26)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+						  <img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine27.jfif" style="width:100%" onclick="openModal();currentSlide(27)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+						  <img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine28.jpg" style="width:100%" onclick="openModal();currentSlide(28)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine29.jpg" style="width:100%" onclick="openModal();currentSlide(29)" class="hover-shadow cursor">
+						  </div>
+						<div class="column">
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine30.jpg" style="width:100%" onclick="openModal();currentSlide(30)" class="hover-shadow cursor">
+						  </div>
+					  </div>
+					  
+					  <div id="myModal" class="modal">
+						<span class="close cursor" onclick="closeModal()">&times;</span>
+						<div class="modal-content">
+					  
+						  <div class="mySlides">
+							<div class="numbertext">1 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine25.jpg" style="width:500px">
+						  </div>
+					  
+						  <div class="mySlides">
+							<div class="numbertext">2 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine26.jpg" style="width:500px">
+						  </div>
+					  
+						  <div class="mySlides">
+							<div class="numbertext">3 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine27.jpg" style="width:500px">
+						  </div>
+						  
+						  <div class="mySlides">
+							<div class="numbertext">4 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine28.jpg" style="width:500px">
+						  </div>
+
+						  <div class="mySlides">
+							<div class="numbertext">5 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine29.jpg" style="width:500px">
+						  </div>
+
+						  <div class="mySlides">
+							<div class="numbertext">6 / 6</div>
+							<img src="Imagini Filme noi/Imagini Carousel-distributie/Imagine30.jpg" style="width:500px">
+						  </div>
+						  
+						  <a class="Prev" onclick="plusSlides(-1)">&#10094;</a>
+						  <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+					  
+						  <div class="caption-container">
+							<p id="caption"></p>
+						  </div>
+					
+					  
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine25.jpg" style="width:100%" onclick="currentSlide(25)" alt="Tom Cruise">
+						  </div>
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine26.jpg" style="width:100%" onclick="currentSlide(26)" alt="Annabelle Wallis">
+						  </div>
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine27.jpg" style="width:100%" onclick="currentSlide(27)" alt="Sofia Boutella">
+						  </div>
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine28.jpg" style="width:100%" onclick="currentSlide(28)" alt="Chasty Ballesteros">
+						  </div>
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine29.jpg" style="width:100%" onclick="currentSlide(29)" alt="Rachel Weisz">
+						  </div>
+						  <div class="column">
+							<img class="demo cursor" src="Imagini Filme noi/Imagini Carousel-distributie/Imagine30.jpg" style="width:100%" onclick="currentSlide(30)" alt="Brendan Fraser">
+						  </div>
+						</div>
+					  </div>
+					</p>
+				</div>
+				<!-- Next/prev buttons -->
+				<a class="prev" onclick="plusSlides5(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides5(1)">&#10095;</a>
+			</div>
+		</section>		
+	</div>	
+
+    <footer class="footer-distributed">
+		<div class="footer-left">
+		<h3>Cinema<span>Vexus</span></h3>
+ 
+		<p class="footer-links">
+        <a href="../Cinema/Cinema.html"">Cinema</a>
+    ·
+		<a href="Filme noi.html">Filme noi</a>
+	·
+		<a href="../Genuri/Genuri.html">Genuri</a>
+	·
+		<a href="../Bilete/Bilete.html">Bilete</a>
+	·
+		<a href="../Contact/Contact.html">Contact</a>
+		</p>
+ 
+		<p class="footer-company-name">CinemaVexus &copy; 2019</p>
+		</div>
+ 
+
+		<div class="footer-center">
+		<div><i class="fa fa-map-marker"></i><p><span><a href="https://www.google.com/maps/place/Cinema+Palace/@47.0349011,21.9464564,17z/data=!3m1!4b1!4m5!3m4!1s0x474638715afbd18d:0xbb1c4d436ea71452!8m2!3d47.0349011!4d21.9486451">Strada Nufărului 30</span> Oradea, România</a></p></div>
+ 
+		<div>
+		<i class="fa fa-phone"></i><p>0259 420 002</p>
+		</div>
+ 
+		<div>
+		<i class="fa fa-envelope"></i><p><a href="mailto:cinema_vexus@yahoo.com">cinema_vexus@yahoo.com</a></p>
+		</div>
+		</div>
+ 
+
+		<div class="footer-right">
+		<p class="footer-company-about">
+		<span>Motto</span>
+			  Ca o piesă de teatru, așa este viața: 
+			  nu contează cât de mult a ținut,
+			  ci cât de frumos s-a desfășurat.
+		</p>
+ 
+		<div class="footer-icons">
+			  <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+			  <a href="https://twitter.com/?lang=ro"><i class="fa fa-twitter"></i></a>
+			  <a href="https://ro.linkedin.com"><i class="fa fa-linkedin"></i></a>
+			  <a href="https://circleci.com/integrations/github/?utm_source=gnb&utm_medium=SEM&utm_campaign=SEM-gnb-Github-Eng-ni&utm_content=SEM-gnb-Github-Eng-ni-Github&gclid=EAIaIQobChMIz46CmZa45gIVguF3Ch3kxQafEAAYASAAEgL9aPD_BwE"><i class="fa fa-github"></i></a> 
+		</div>
+		</div>
+		</footer>
+</div>
+</body>
+</html>

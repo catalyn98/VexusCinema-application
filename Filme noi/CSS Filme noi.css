@@ -1,0 +1,620 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+    background-image: url("Imagini Filme noi/Background/Background pagina.jpg"); 
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+	background-size: cover; 
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+
+/*proprietati CSS pentru header*/
+header{
+	background-color: white;
+    width: 100%; 
+}
+
+*{
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+.logo{
+    width: 150px;
+    border: 5px solid;
+    border-color: rgb(51, 51, 51);
+    border-radius: 10%;
+}
+
+
+/*proprietati CSS meniu*/
+nav{
+	text-align: left;
+    background-color: rgb(12, 18, 73);}
+
+li{
+	padding-top: 8px;
+	padding-bottom: 7px;
+	list-style: none;
+}
+
+nav li a{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.current-page a{
+	color: red;
+}
+
+#primary-menu{
+	display: none;
+}
+
+.icon{
+	float: right;
+	color: rgb(12, 18, 73);
+	font-size: 2rem;
+    margin-top:-3rem;
+    margin-right:2rem;
+}
+
+
+/*proprietati CSS meniu efect Hover*/
+.nav * {
+  transition: all .35s ease;
+}
+
+.nav a {
+  padding: .1em .3em;
+  position: relative;
+}
+
+.nav a::before,
+.nav a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+.nav a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid rgb(14, 77, 211);
+  border-right: 3px solid rgb(14, 77, 211);
+  transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid rgb(14, 77, 211);
+  border-left: 3px solid rgb(14, 77, 211);
+  transform: translate(100%, -50%)
+}
+
+.nav a:hover:before,
+.nav a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+.nav a:hover {
+  color: rgb(14, 77, 211);
+}
+
+
+/*proprietati CSS Sectiune Carousel-principal*/
+.wrapper{
+	padding:1rem;
+}
+
+section img{
+	width: 100%;
+	display: block;
+}
+
+section{
+	margin:1rem;
+}
+
+.text-slideshow{
+	margin-top:-1rem;
+	position: relative;
+	text-align: center;
+	font-weight: 800;
+	color:white;
+	padding-bottom: 2rem;
+	background-color: rgba(0,0,0,0.8); 
+}
+
+.mySlides1, .mySlides2, .mySlides3,  .mySlides4, .mySlides5{
+  display: none;
+  padding: 1rem;
+  text-align: left;
+}
+
+h2{
+	text-align: center;
+	color: red;
+}
+
+span{
+	color: rgb(209, 122, 22);
+}
+
+/* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;	
+	position: absolute;
+	bottom: 0rem;
+	left:1rem;
+	width: auto;
+	margin:1rem 5% 1rem 5%;
+	padding: .2rem;
+	color: red;
+	font-weight: bold;
+	font-size: 2rem;
+	vertical-align: bottom;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {	
+	border-radius: 3px 0 0 3px;
+	right: 1rem;
+	left:auto;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+	background-color: rgba(255, 0, 0, 0.8);
+	color: white;
+  }
+
+
+/*proprietati CSS Distributie*/
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  .column {
+	float: left;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 10px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: black;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	width: 90%;
+	max-width: 500px;
+  }
+  
+  /* The Close Button */
+  .close {
+	color: white;
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	font-size: 35px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #999;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  
+  .mySlides {
+	display: none;
+  }
+  
+  .cursor {
+	cursor: pointer;
+  }
+
+  /* Next & previous buttons */
+.Prev,
+.Next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.Next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.Prev:hover,
+.Next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+  
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+  }
+  
+  .caption-container {
+	text-align: center;
+	background-color: black;
+	padding: 2px 16px;
+	color: white;
+  }
+  
+  .demo {
+	opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+	opacity: 1;
+  }
+  
+  img.hover-shadow {
+	transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+	box-shadow: 0 4px 8px 0 rgba(255, 253, 253, 0.2), 0 6px 20px 0 rgba(255, 254, 254, 0.19);
+  }
+
+/*proprietati footer*/
+footer{
+	bottom: 0;
+}
+
+.footer-distributed{
+    background-color: rgba(0,0,0,0.85);
+	width: 100%;
+	text-align: left;
+	font: bold 16px;
+	padding: 10px 50px;
+	margin-top: 30px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+/*proprietati footer coloana 1*/
+.footer-distributed .footer-left{
+	width: 40%;
+}
+ 
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+ 
+.footer-distributed h3 span{
+	color:  red;
+}
+ 
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+	color:  white;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+/*proprietati footer coloana 2*/
+.footer-distributed .footer-center{
+	width: 35%;
+}
+ 
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color:  red;
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+	color:  red;
+}
+ 
+/*proprietati footer coloana*/
+.footer-distributed .footer-right{
+	width: 20%;
+}
+ 
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  aliceblue;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  white;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/*efect Hover link-uri social media*/
+.footer-icons a::before {
+	content: '';
+	transition: .5s;
+	transform: scale(.9);
+  }
+  
+  .footer-icons a:hover::before {
+	transform: scale(1.1);
+	box-shadow: 0 0 15px red;
+  }
+  
+  .footer-icons a:hover {
+	box-shadow: 0 0 5px red;
+	text-shadow: 0 0 5px red;
+  }
+ 
+ 
+ /*start responsive footer for tablet and phone*/
+@media (max-width: 980px) {
+ 
+	.footer-distributed{
+		font: bold 14px;
+	}
+ 
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+ 
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+    }
+}
+/*sfarsit responsive footer for tablet and phone*/
+
+
+/*start responsive for tablet*/
+@media (min-width: 768px){
+
+/*proprietati CSS header*/
+.logo{
+	width: 10%;
+}
+
+	.icon{
+		display: none;
+	}
+
+	#primary-menu{
+        display: block;
+	}
+
+	li{
+		display: inline-block;
+	}
+
+	nav{
+		background-color: initial;
+		display: inline-block;
+		width: 80%;
+        text-align: right;
+	}
+
+	nav li a{
+		color: rgb(12, 18, 73);;
+		font-weight: bold;
+		font-size: 1.4rem;
+		margin:0.2rem;
+	}
+	
+
+/*proprietati CSS Sectiune*/
+.column {
+	float: left;
+	width: 50%;
+	text-align: center;
+	padding-bottom: 10px;
+	padding-left: 10px;
+  }
+
+	section img, .text-slideshow{
+		display: inline-block;
+	}
+
+	.Poster{
+		width: 40%;	
+	}
+
+
+	section{
+		position: relative;
+		margin:2.5rem;
+		display: flex;
+	    flex-direction: row;
+	}
+
+	.text-slideshow{
+		position: relative;
+		margin-top: .0rem;
+	}
+
+	div.text-slideshow{
+		height: 700px;
+	}
+
+	.mySlides1, .mySlides2, .mySlides3,  .mySlides4, .mySlides5{
+	  padding: 1rem;
+	}
+
+	section:nth-child(2) .text-slideshow {
+	  order:1;
+	}
+	
+	section:nth-child(2) img{
+		order:2;
+	} 
+
+	section:nth-child(4) .text-slideshow {
+		order:1;
+	  }
+	  
+	  section:nth-child(4) img{
+		  order:2;
+	  } 
+  }
+/*end responsive for tablet*/
+
+
+/*start responsive for desktop*/
+@media (min-width: 1024px){
+/*proprietati CSS Header*/
+	.logo{
+        width: 12%;
+    }
+    
+    nav li a{
+		font-size: 2rem;
+	}
+
+
+	/*proprietati CSS Carousel-distributie*/
+	.row > .column {
+		padding-top: 30.8px;
+		padding-left: 20px;
+	  }
+
+	.column {
+		float: left;
+		width: 33%;
+	  }
+
+	  div.text-slideshow{
+		height: 750px;
+	}
+
+	.text-slideshow{
+		font-size: 18px;
+	}
+
+	.Poster{
+		height: 750px;
+	}
+}

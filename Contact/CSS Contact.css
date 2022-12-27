@@ -1,0 +1,491 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+    background-image: url("Imagini Contact/Background/Background pagina.jpg"); 
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+	background-size: cover; 
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+
+/*proprietati CSS pentru header*/
+header{
+	background-color: white;
+    width: 100%; 
+}
+
+*{
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+.logo{
+    width: 150px;
+    border: 5px solid;
+    border-color: rgb(51, 51, 51);
+    border-radius: 10%;
+}
+
+
+/*proprietati CSS meniu*/
+nav{
+	text-align: left;
+    background-color: rgb(12, 18, 73);}
+
+li{
+	padding-top: 8px;
+	padding-bottom: 7px;
+	list-style: none;
+}
+
+nav li a{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.current-page a{
+	color: red;
+}
+
+#primary-menu{
+	display: none;
+}
+
+.icon{
+	float: right;
+	color: rgb(12, 18, 73);
+	font-size: 2rem;
+    margin-top:-3rem;
+    margin-right:2rem;
+}
+
+
+/*proprietati CSS meniu efect Hover*/
+.nav * {
+  transition: all .35s ease;
+}
+
+.nav a {
+  padding: .1em .3em;
+  position: relative;
+}
+
+.nav a::before,
+.nav a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+.nav a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid rgb(14, 77, 211);
+  border-right: 3px solid rgb(14, 77, 211);
+  transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid rgb(14, 77, 211);
+  border-left: 3px solid rgb(14, 77, 211);
+  transform: translate(100%, -50%)
+}
+
+.nav a:hover:before,
+.nav a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+.nav a:hover {
+  color: rgb(14, 77, 211);
+}
+
+
+/*proprietati CSS sectiune*/
+#form-main{
+	width:100%;
+	float:left;
+	padding-top:0px;
+}
+
+#form-div {
+	background-color:rgba(0, 0, 0, 0.7);
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:30px;
+	padding-bottom:50px;
+	width: 450px;
+	float: left;
+	left: 50%;
+	position: absolute;
+    margin-top:23px;
+	margin-left: -230px;
+    border-radius: 10px;
+}
+
+.montform .feedback-input {
+	color:#3c3c3c;
+    font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	box-sizing: border-box;
+	border: 3px solid rgba(0,0,0,0);
+}
+
+
+.montform .feedback-input:focus{
+	background: #fff;
+	border: 3px solid rgb(14, 77, 211);
+	color: #3498db;
+	outline: none;
+    padding: 13px 13px 13px 54px;
+}
+
+/*Pictograme*/
+.montform  #name{
+	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-address-book.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+.montform  #name:focus{
+	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-address-book.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+    background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+.montform  #email{
+	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-mail.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+.montform  #email:focus{
+	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-mail.svg);
+	background-size: 30px 30px;
+    background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+.montform  #comment{
+	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-pencil.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+.montform  textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+.montform  input:hover, .montform  textarea:hover,
+.montform  input:focus, .montform  textarea:focus {
+	background-color:#e6e6e6;
+}
+
+.button-blue{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float:left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: rgb(14, 77, 211);
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+}
+
+.button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: rgb(14, 77, 211);
+}
+	
+.montform  .submit:hover {
+	color: #3498db;
+}
+	
+.ease {
+	width: 0px;
+	height: 74px;
+	background-color: #fbfbfb;
+	transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+
+/*proprietati footer*/
+footer{
+	bottom: 0;
+}
+
+.footer-distributed{
+    background-color: rgba(0,0,0,0.85);
+	width: 100%;
+	text-align: left;
+	font: bold 16px;
+	padding: 10px 50px;
+	margin-top: 560px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+ 
+/*proprietati footer coloana 1*/
+.footer-distributed .footer-left{
+	width: 40%;
+}
+ 
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+ 
+.footer-distributed h3 span{
+	color:  red;
+}
+ 
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+	color:  white;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+/*proprietati footer coloana 2*/
+.footer-distributed .footer-center{
+	width: 35%;
+}
+ 
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color:  red;
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+	color:  red;
+}
+ 
+/*proprietati footer coloana*/
+.footer-distributed .footer-right{
+	width: 20%;
+}
+ 
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  aliceblue;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  white;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/*efect Hover link-uri social media*/
+.footer-icons a::before {
+	content: '';
+	transition: .5s;
+	transform: scale(.9);
+  }
+  
+  .footer-icons a:hover::before {
+	transform: scale(1.1);
+	box-shadow: 0 0 15px red;
+  }
+  
+  .footer-icons a:hover {
+	box-shadow: 0 0 5px red;
+	text-shadow: 0 0 5px red;
+  }
+
+
+   /*start section responsive footer for tablet and phone*/
+ @media  only screen and (max-width: 580px) {
+	#form-div{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+ /*end section responsive footer for tablet and phone*/
+ 
+
+ /*start footer responsive footer for tablet and phone*/
+@media (max-width: 980px) {
+ 
+	.footer-distributed{
+		font: bold 14px;
+	}
+ 
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+ 
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+    }
+}
+/*sfarsit footer responsive footer for tablet and phone*/
+
+
+/*start responsive for tablet*/
+@media (min-width: 768px){
+
+/*proprietati CSS header*/
+.logo{
+	width: 10%;
+}
+
+.icon{
+	display: none;
+	}
+
+#primary-menu{
+	display: block;
+	}
+
+li{
+	display: inline-block;
+	}
+
+nav{
+	background-color: initial;
+	display: inline-block;
+	width: 80%;
+    text-align: right;
+	}
+
+nav li a{
+	color: rgb(12, 18, 73);;
+	font-weight: bold;
+	font-size: 1.4rem;
+	margin:0.2rem;
+    }
+}
+/*end responsive for tablet*/
+
+
+/*start responsive for desktop*/
+@media (min-width: 1024px){
+/*proprietati CSS Header*/
+.logo{
+	width: 12%;
+    }
+    
+nav li a{
+	font-size: 2rem;
+    }	
+}

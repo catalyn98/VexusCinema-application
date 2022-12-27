@@ -1,0 +1,84 @@
+.swiper-container{
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+    overflow:hidden;
+    z-index:1}
+    
+ .swiper-slide{
+        float:left}
+          
+.swiper-wrapper{
+    position:relative;
+    width:100%;
+    height:100%;
+    z-index:1;
+    display:-webkit-box;
+    display:-moz-box;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    display:flex;
+    -webkit-transition-property:-webkit-transform;
+    -moz-transition-property:-moz-transform;
+    -o-transition-property:-o-transform;
+    -ms-transition-property:-ms-transform;
+    transition-property:transform;
+    -webkit-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    box-sizing:content-box}
+    
+
+        
+.swiper-slide{
+            -webkit-flex-shrink:0;
+            -ms-flex:0 0 auto;
+            flex-shrink:0;width:100%;
+            height:100%;position:relative}
+            
+.swiper-slide{height:auto}
+
+.swiper-pagination{
+    position:absolute;
+    text-align:center;
+    -webkit-transition:.3s;
+    -moz-transition:.3s;
+    -o-transition:.3s;
+    transition:.3s;
+    -webkit-transform:translate3d(0,0,0);
+    -ms-transform:translate3d(0,0,0);
+    -o-transform:translate3d(0,0,0);
+    transform:translate3d(0,0,0);
+    z-index:10}
+    
+    .swiper-pagination.swiper-pagination-hidden{opacity:0}
+    
+    .swiper-container-horizontal>.swiper-pagination-bullets,.swiper-pagination-custom,.swiper-pagination-fraction{
+        bottom:10px;
+        left:0;width:100%}
+        
+    .swiper-pagination-bullet{
+        width:8px;height:8px;
+        display:inline-block;
+        border-radius:100%;
+        background:rgb(231, 7, 7);
+        opacity:.6}
+        
+button.swiper-pagination-bullet{
+    border:none;
+    margin:0;
+    padding:0;
+    box-shadow:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    -webkit-appearance:none;
+    appearance:none}
+    
+.swiper-pagination-clickable .swiper-pagination-bullet{cursor:pointer}
+
+.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet{margin:5px 0;display:block}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{margin:0 5px}
+
+.swiper-slide{-webkit-transition-timing-function:ease-out;-moz-transition-timing-function:ease-out;-ms-transition-timing-function:ease-out;-o-transition-timing-function:ease-out;transition-timing-function:ease-out}
+
+.swiper-slide{pointer-events:none;-webkit-transition-property:opacity;-moz-transition-property:opacity;-o-transition-property:opacity;transition-property:opacity}

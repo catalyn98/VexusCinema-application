@@ -1,0 +1,496 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+    background-image: url("Imagini Cinema/Background/Background pagina.jpg"); 
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+	background-size: cover; 
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+
+/*proprietati CSS pentru header*/
+header{
+	background-color: white;
+    width: 100%; 
+}
+
+*{
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+.logo{
+    width: 150px;
+    border: 5px solid;
+    border-color: rgb(51, 51, 51);
+    border-radius: 10%;
+}
+
+
+/*proprietati CSS meniu*/
+nav{
+	text-align: left;
+    background-color: rgb(12, 18, 73);}
+
+li{
+	padding-top: 8px;
+	padding-bottom: 7px;
+	list-style: none;
+}
+
+nav li a{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.current-page a{
+	color: red;
+}
+
+#primary-menu{
+	display: none;
+}
+
+.icon{
+	float: right;
+	color: rgb(12, 18, 73);
+	font-size: 2rem;
+    margin-top:-3rem;
+    margin-right:2rem;
+}
+
+
+/*proprietati CSS meniu efect Hover*/
+.nav * {
+  transition: all .35s ease;
+}
+
+.nav a {
+  padding: .1em .3em;
+  position: relative;
+}
+
+.nav a::before,
+.nav a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+.nav a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid rgb(14, 77, 211);
+  border-right: 3px solid rgb(14, 77, 211);
+  transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid rgb(14, 77, 211);
+  border-left: 3px solid rgb(14, 77, 211);
+  transform: translate(100%, -50%)
+}
+
+.nav a:hover:before,
+.nav a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+.nav a:hover {
+  color: rgb(14, 77, 211);
+}
+
+
+/*proprietati CSS Carousel*/
+.slideshow{
+	display: none;
+}
+
+
+/*proprietati CSS galerie de imagini*/
+section{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+    padding:1rem; 
+}
+
+.gallery{
+	width: 60%;
+	margin:1rem auto;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+}
+
+.gallery img{
+	width: 100%;
+	border-style: solid;
+	border-color: rgb(5, 250, 229);
+	border-width: 7px;
+}
+
+
+/*proprietati footer*/
+footer{
+	bottom: 0;
+}
+
+.footer-distributed{
+    background-color: rgba(0,0,0,0.85);
+	width: 100%;
+	text-align: left;
+	font: bold 16px;
+	padding: 10px 50px;
+	margin-top: 30px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+/*proprietati footer coloana 1*/
+.footer-distributed .footer-left{
+	width: 40%;
+}
+ 
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+ 
+.footer-distributed h3 span{
+	color:  red;
+}
+ 
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+	color:  white;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+/*proprietati footer coloana 2*/
+.footer-distributed .footer-center{
+	width: 35%;
+}
+ 
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color:  red;
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+	color:  red;
+}
+ 
+/*proprietati footer coloana*/
+.footer-distributed .footer-right{
+	width: 20%;
+}
+ 
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  aliceblue;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  white;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/*efect Hover link-uri social media*/
+.footer-icons a::before {
+	content: '';
+	transition: .5s;
+	transform: scale(.9);
+  }
+  
+  .footer-icons a:hover::before {
+	transform: scale(1.1);
+	box-shadow: 0 0 15px red;
+  }
+  
+  .footer-icons a:hover {
+	box-shadow: 0 0 5px red;
+	text-shadow: 0 0 5px red;
+  }
+ 
+ 
+ /*start responsive footer for tablet and phone*/
+@media (max-width: 980px) {
+ 
+	.footer-distributed{
+		font: bold 14px;
+	}
+ 
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+ 
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+    }
+}
+/*sfarsit responsive footer for tablet and phone*/
+
+
+/*start responsive for tablet*/
+@media (min-width: 768px){
+
+/*proprietati CSS header*/
+.logo{
+	width: 10%;
+}
+
+	.icon{
+		display: none;
+	}
+
+	#primary-menu{
+        display: block;
+	}
+
+	li{
+		display: inline-block;
+	}
+
+	nav{
+		background-color: initial;
+		display: inline-block;
+		width: 80%;
+        text-align: right;
+	}
+
+	nav li a{
+		color: rgb(12, 18, 73);;
+		font-weight: bold;
+		font-size: 1.4rem;
+		margin:0.2rem;
+    }
+   
+   
+/*proprietati CSS Carousel*/
+	.slideshow{
+		display: initial;
+		width: 100%;
+		position: relative;
+	 	margin:2rem auto 1rem auto;
+	}
+
+	.dot {
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+    }
+    
+	.dots{
+		text-align: center;
+		position:relative;
+		bottom:6rem;
+    }
+    
+	.active {
+	  background-color: #717171;
+    }
+    
+	.fade {
+	  -webkit-animation-name: fade;
+	  -webkit-animation-duration: 0.5s;
+	  animation-name: fade;
+	  animation-duration: 1s;
+	}
+
+	@-webkit-keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+
+	@keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+    }
+    
+	.mySlides{
+		width: 100%;
+		display: none;
+    }
+    
+	.mySlides img{
+		width: 100%;
+		object-fit: cover;
+	  	object-position: center; 
+	  	height: 55vh;
+    }
+    
+	.prev, .next {
+	  cursor: pointer;
+	  position: relative;
+	  bottom: -0.6rem;
+	  text-align: center;
+	  left: calc(50% - 115px);
+	  margin:0 2rem;
+	  width: auto;
+	  padding: 10px;
+	  color: rgb(12, 18, 73);
+	  font-weight: bold;
+	  font-size: 2.5rem;
+	  transition: 0.6s ease;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	}
+
+	.next {
+	  right: 0;
+	  border-radius: 3px 0 0 3px;
+	}
+
+	.prev:hover, .next:hover {
+	  background-color: rgb(88, 88, 85);
+	}
+
+
+/*proprietati CSS galerie de imagini*/
+	section{
+		flex-direction: row;
+	}
+
+	.main-wrapper{
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.gallery{
+        width: 40%;
+        padding-left: -1.5rem;
+	}
+
+	section{
+	background-color: rgba(0,0,0,0.8);
+	margin-top: 30px; 
+	}
+}
+/*end responsive for tablet*/
+
+
+/*start responsive for desktop*/
+@media (min-width: 1024px){
+/*proprietati CSS Header*/
+	.logo{
+        width: 12%;
+    }
+    
+    nav li a{
+		font-size: 2rem;
+    }
+
+
+/*proprietati CSS galerie de imagini*/
+    section{
+        margin-top: 30px;
+	}
+	
+	.main-wrapper{
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.gallery{
+        width: 20%;
+		padding-left: -1.5rem;
+		margin:1rem 2.5%;
+	}	
+}
