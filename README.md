@@ -5,7 +5,7 @@ Vexus Cinema
 HTML5, CSS3, JavaScript
 </p>
 
-<img src=https://github.com/catalyn98/VexusCinema-application/blob/master/StackTech.png" />
+<img src="https://github.com/catalyn98/VexusCinema-application/blob/master/StackTech.png" />
 
 # Tech stack
 Vexus Cinema uses a number of open source projects to work properly:
