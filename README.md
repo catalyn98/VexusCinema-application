@@ -1,11 +1,13 @@
 <h1 align="center">
-Vexus Cinema
+  Vexus Cinema
 </h1>
 <p align="center">
-HTML5, CSS3, JavaScript
+  HTML5, CSS3, JavaScript
 </p>
 
-<img src="https://github.com/catalyn98/VexusCinema-application/blob/main/StackTech.png" />
+<p align="center">
+  <img src="https://github.com/catalyn98/VexusCinema-application/blob/main/StackTech.png" />
+</p>
 
 # Tech stack
 Vexus Cinema uses a number of open source projects to work properly:
@@ -14,7 +16,7 @@ Vexus Cinema uses a number of open source projects to work properly:
 * [JavaScript](https://www.w3schools.com/js/) - is the programming language of the Web.
 
 # Installation
-Vexus Cinema application requires a [web browser](https://en.wikipedia.org/wiki/Web_browser)  to run.
+Vexus Cinema application requires a [web browser](https://en.wikipedia.org/wiki/Web_browser) to run.
 
 ### Clone the repositories
 ```sh
@@ -22,21 +24,8 @@ $ git clone https://github.com/catalyn98/VexusCinema-application.git
 ```
 
 # Web application screenshots 
-
-1.Cinema
-<img src="https://github.com/catalyn98/VexusCinema-application/blob/main/Screenshots/1.Cinema.png" />
-
-<details>
-  <summary>More Screenshots</summary>
-  2.Filme noi
-  <img src="https://github.com/catalyn98/VexusCinema-application/blob/main/Screenshots/2.Filme%20noi.png" />
-
-  3.Genuri
-  <img src="https://github.com/catalyn98/VexusCinema-application/blob/main/Screenshots/3.Genuri.png" />
-
-  4.Bilete
-  <img src="https://github.com/catalyn98/VexusCinema-application/blob/main/Screenshots/4.Bilete.png" />
-
-  5.Contact
-  <img src="https://github.com/catalyn98/VexusCinema-application/blob/main/Screenshots/5.Contact.png" />
-</details>
+| <p align="center">**Cinema**</p> | <p align="center">**Filme noi**</p> | <p align="center">**Genuri**</p> |
+| ------------ | ------------ | ------------ |
+| <img src="https://github.com/catalyn98/VexusCinema-application/blob/main/Screenshots/1.Cinema.png" />  |  <img src="https://github.com/catalyn98/VexusCinema-application/blob/main/Screenshots/2.Filme%20noi.png" /> | <img src="https://github.com/catalyn98/VexusCinema-application/blob/main/Screenshots/3.Genuri.png" /> |
+| <p align="center">**Bilete**</p> | <p align="center">**Contact**</p> | |
+| <img src="https://github.com/catalyn98/VexusCinema-application/blob/main/Screenshots/4.Bilete.png" /> | <img src="https://github.com/catalyn98/VexusCinema-application/blob/main/Screenshots/5.Contact.png" /> | |
